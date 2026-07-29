@@ -1,0 +1,249 @@
+.insights-page {
+  padding: 32px 0 60px;
+  min-height: calc(100vh - 64px);
+}
+
+.insights-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  min-height: calc(100vh - 64px);
+  text-align: center;
+  padding: 20px;
+}
+
+.loading-orb {
+  width: 72px;
+  height: 72px;
+  background: var(--gradient-accent);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  animation: glow 2s ease-in-out infinite;
+}
+
+.insights-loading h2 {
+  font-size: 22px;
+  color: var(--text-primary);
+}
+.insights-loading p {
+  font-size: 15px;
+  color: var(--text-secondary);
+}
+
+.insights-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.insights-title-wrap {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.insights-icon-wrap {
+  width: 52px;
+  height: 52px;
+  background: var(--gradient-accent);
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  box-shadow: var(--shadow-accent);
+  animation: glow 3s ease-in-out infinite;
+  flex-shrink: 0;
+}
+
+.insights-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 80px 20px;
+  text-align: center;
+}
+.insights-empty h2 {
+  font-size: 22px;
+  color: var(--text-secondary);
+}
+.insights-empty p {
+  font-size: 15px;
+  color: var(--text-muted);
+  max-width: 400px;
+}
+
+.insights-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.insight-card {
+  padding: 24px;
+}
+
+.taste-card {
+  grid-column: 1 / -1;
+  background: linear-gradient(135deg, rgba(124,58,237,0.08), rgba(168,85,247,0.05));
+  border-color: rgba(124,58,237,0.2);
+}
+
+.recommendations-card {
+  grid-column: 1 / -1;
+}
+
+.insight-card-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.insight-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.insight-card-title {
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.taste-text {
+  font-size: 16px;
+  line-height: 1.75;
+  color: var(--text-secondary);
+}
+
+.insights-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.insight-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 12px 14px;
+  background: var(--bg-glass);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-subtle);
+  transition: var(--transition);
+}
+.insight-item:hover {
+  border-color: var(--border-accent);
+  background: var(--bg-glass-hover);
+}
+
+.insight-text {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+/* Listening eras */
+.eras-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.era-chip {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 14px 20px;
+  background: rgba(124,58,237,0.1);
+  border: 1px solid rgba(124,58,237,0.2);
+  border-radius: var(--radius-md);
+  gap: 4px;
+  transition: var(--transition);
+}
+.era-chip:hover {
+  background: rgba(124,58,237,0.2);
+  transform: translateY(-2px);
+}
+
+.era-name {
+  font-size: 18px;
+  font-weight: 800;
+  background: var(--gradient-text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.era-count {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+/* Recommendations */
+.recommendations-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.recommendation-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px;
+  background: var(--bg-glass);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  transition: var(--transition);
+}
+.recommendation-item:hover {
+  border-color: var(--border-accent);
+  background: var(--bg-glass-hover);
+}
+
+.rec-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.rec-badge {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent-light);
+}
+
+.rec-query {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.rec-reason {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+@media (max-width: 768px) {
+  .insights-grid { grid-template-columns: 1fr; }
+  .taste-card, .recommendations-card { grid-column: 1; }
+}

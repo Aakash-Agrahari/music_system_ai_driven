@@ -1,0 +1,88 @@
+.library-page {
+  padding: 32px 0 60px;
+  min-height: calc(100vh - 64px);
+}
+
+.library-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 32px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.page-title {
+  font-size: clamp(28px, 4vw, 40px);
+  font-weight: 900;
+  letter-spacing: -1px;
+  margin-bottom: 6px;
+}
+
+.page-subtitle {
+  font-size: 15px;
+  color: var(--text-secondary);
+}
+
+.library-controls {
+  display: flex;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.loading-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 80px 20px;
+  color: var(--text-secondary);
+}
+
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  padding: 80px 20px;
+  text-align: center;
+}
+.empty-state h2 {
+  font-size: 22px;
+  color: var(--text-secondary);
+}
+.empty-state p {
+  font-size: 15px;
+  color: var(--text-muted);
+}
+
+.albums-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.page-indicator {
+  font-size: 14px;
+  color: var(--text-secondary);
+  font-weight: 500;
+  min-width: 120px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .albums-grid { grid-template-columns: repeat(2, 1fr); }
+  .library-controls { flex-direction: column; }
+}
+@media (max-width: 480px) {
+  .albums-grid { grid-template-columns: 1fr; }
+}
