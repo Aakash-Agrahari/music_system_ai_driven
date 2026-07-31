@@ -138,7 +138,7 @@ export default function SearchPage() {
           <div className="search-empty">
             <Music2 size={64} color="var(--text-muted)" />
             <p>Start typing to search the variety of songs</p>
-            <span>Try "Coldplay", "Taylor Swift", "Dark Side of the Moon"</span>
+            <span>Try "Coldplay", "Arijit Singh", "Shape of you"</span>
           </div>
         )}
 
