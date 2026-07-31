@@ -91,7 +91,7 @@ export default function SearchPage() {
           <h1 className="search-headline">
             Discover <span className="gradient-text">Music</span>
           </h1>
-          <p className="search-subline">Search the iTunes catalog and build your personal library</p>
+          <p className="search-subline">Search for variety of songs and build your personal library</p>
 
           <div className="search-bar-wrap">
             <div className="search-bar">
