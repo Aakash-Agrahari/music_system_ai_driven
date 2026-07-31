@@ -29,7 +29,7 @@ export default function LoginPage() {
       toast.success(`Welcome${mode === 'register' ? ' aboard' : ' back'}, ${user.username}! 🎵`)
       navigate('/search')
     } catch (err) {
-      const msg = err.response?.data?.message || 'Something went wrong. Try again.'
+      const msg = err.response?.data?.message || 'Something went wrong. Please try again.'
       toast.error(msg)
     } finally {
       setLoading(false)
@@ -54,7 +54,7 @@ export default function LoginPage() {
             <Music2 size={26} />
           </div>
           <h1 className="gradient-text" style={{ fontSize: 32, fontWeight: 900, letterSpacing: -1 }}>SoundVault</h1>
-          <p className="login-tagline">Your personal music library, powered by insights</p>
+          <p className="login-tagline">Your personal music library, powered by AI Insights</p>
         </div>
 
         {/* Card */}
