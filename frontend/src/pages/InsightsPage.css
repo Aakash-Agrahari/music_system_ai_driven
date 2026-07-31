@@ -60,7 +60,7 @@
   justify-content: center;
   color: white;
   box-shadow: var(--shadow-accent);
-  animation: glow 3s ease-in-out infinite;
+  animation: glow 5s ease-in-out infinite;
   flex-shrink: 0;
 }
 
