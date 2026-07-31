@@ -79,7 +79,7 @@ export default function AnalyticsPage() {
       <div className="container">
         <div className="empty-state" style={{ padding: '80px 20px', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 14 }}>
           <BarChart3 size={72} color="var(--text-muted)" />
-          <h2 style={{ fontSize: 22, color: 'var(--text-secondary)' }}>No analytics yet</h2>
+          <h2 style={{ fontSize: 22, color: 'var(--text-secondary)' }}>No analytics available yet</h2>
           <p style={{ color: 'var(--text-muted)' }}>Add at least 5 albums to your library to see beautiful analytics!</p>
         </div>
       </div>
