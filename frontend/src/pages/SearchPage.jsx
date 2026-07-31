@@ -137,7 +137,7 @@ export default function SearchPage() {
         {!hasSearched && (
           <div className="search-empty">
             <Music2 size={64} color="var(--text-muted)" />
-            <p>Start typing to search the iTunes catalog</p>
+            <p>Start typing to search the variety of songs</p>
             <span>Try "Coldplay", "Taylor Swift", "Dark Side of the Moon"</span>
           </div>
         )}
